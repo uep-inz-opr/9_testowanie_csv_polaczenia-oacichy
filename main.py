@@ -1,8 +1,8 @@
-# main.py
+import csv
 
 class MenadzerPolaczen:
   def __init__(self, filename):
-    self.filenaCme = filename
+    self.filename = filename
     self.data_dict = self.read_data()
 
   def read_data(self):
@@ -24,9 +24,5 @@ class MenadzerPolaczen:
 
 
 if __name__ == "__main__":
-  nazwa_pliku = input()
-  mp = MenadzerPolaczen(input)
-  wynik = mp.pobierz_najczesciej_dzwoniacego()
-  print (wynik)
   print(MenadzerPolaczen(input()).pobierz_najczesciej_dzwoniacego())
     
